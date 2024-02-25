@@ -1,0 +1,135 @@
+/* Set the default font family */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+/* Set the margin for div elements */
+div {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* Style the label elements */
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style the input elements */
+input {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+/* Style the button elements */
+button {
+    margin: 5px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+/* Style the button elements on hover */
+button:hover {
+    background-color: #ccc;
+}
+
+/* Style the custom color button */
+.custColor {
+    background-color: green;
+    color: white;
+}
+
+/* Style the random color button */
+.randColor {
+    background-color: blue;
+    color: white;
+}
+
+/* Style the image element */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    width: 50%;
+}
+
+/* Style the select element */
+select {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+/* Style the custom color input */
+input[type="color"] {
+    padding: 0;
+}
+
+/* Style the page */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Style the page on smaller screens */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+    }
+}
+
+/* Style the body on hover */
+body:hover {
+    background-color: #e5e5e5;
+}
+
+/* Style the input and select elements on focus */
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the button elements on click */
+button:active {
+    background-color: #ddd;
+}
+
+/* Style the custom color input on change */
+input[type="color"]:checked {
+    border: 2px solid green;
+}
+
+/* Style the page on load */
+window.onload = function() {
+    body.style.backgroundColor = "#f5f5f5";
+}
